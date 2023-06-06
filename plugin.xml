@@ -77,7 +77,6 @@
             <string>For Barcode Scanning</string>
         </config-file>
 
-        <framework src="AVFoundation.framework" />
         <framework src="CoreMedia.framework" />
         <framework src="CoreVideo.framework" />
         <framework src="QuartzCore.framework" />
