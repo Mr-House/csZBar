@@ -35,11 +35,13 @@
 
 // failure dialog w/a few useful tips
 
-@interface ZBarHelpController : UIViewController<UIAlertViewDelegate >
+@interface ZBarHelpController : UIViewController
+                              < UIWebViewDelegate,
+                                UIAlertViewDelegate >
 {
     NSString *reason;
     id delegate;
-    WKWebView *webView;
+    UIWebView *webView;
     UIToolbar *toolbar;
     UIBarButtonItem *doneBtn, *backBtn, *space;
     NSURL *linkURL;

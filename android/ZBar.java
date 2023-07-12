@@ -1,4 +1,4 @@
-package org.cloudsky.cordovaPlugins;
+package org.apache.cordova.zbar;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -10,7 +10,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.Context;
 
-import org.cloudsky.cordovaPlugins.ZBarScannerActivity;
+import org.apache.cordova.zbar.ZBarScannerActivity;
 
 public class ZBar extends CordovaPlugin {
 
@@ -18,21 +18,18 @@ public class ZBar extends CordovaPlugin {
 
     private static int SCAN_CODE = 1;
 
-
     // State -----------------------------------------------------------
 
     private boolean isInProgress = false;
     private CallbackContext scanCallbackContext;
 
-
     // Plugin API ------------------------------------------------------
 
     @Override
-    public boolean execute (String action, JSONArray args, CallbackContext callbackContext)
-    throws JSONException
-    {
-        if(action.equals("scan")) {
-            if(isInProgress) {
+    public boolean execute(String action, JSONArray args, CallbackContext callbackContext)
+            throws JSONException {
+        if (action.equals("scan")) {
+            if (isInProgress) {
                 callbackContext.error("A scan is already in progress!");
             } else {
                 isInProgress = true;
@@ -50,14 +47,12 @@ public class ZBar extends CordovaPlugin {
         }
     }
 
-
     // External results handler ----------------------------------------
 
     @Override
-    public void onActivityResult (int requestCode, int resultCode, Intent result)
-    {
-        if(requestCode == SCAN_CODE) {
-            switch(resultCode) {
+    public void onActivityResult(int requestCode, int resultCode, Intent result) {
+        if (requestCode == SCAN_CODE) {
+            switch (resultCode) {
                 case Activity.RESULT_OK:
                     String barcodeValue = result.getStringExtra(ZBarScannerActivity.EXTRA_QRVALUE);
                     scanCallbackContext.success(barcodeValue);

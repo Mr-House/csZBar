@@ -1,6 +1,6 @@
 {
   "name": "@hi-itech/cordova-plugin-cszbar",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "description": "Plugin to integrate with the ZBar barcode scanning library.",
   "cordova": {
     "id": "@hi-itech/cordova-plugin-cszbar",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tjwoon/csZBar.git"
+    "url": "git+https://github.com/Mr-House/csZBar.git"
   },
   "keywords": [
     "cszbar",
@@ -34,10 +34,10 @@
       "version": ">=3.0.0"
     }
   ],
-  "author": "TJ Woon <tj@cloudsky.org>",
+  "author": "Mr-House",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/tjwoon/csZBar/issues"
+    "url": "https://github.com/Mr-House/csZBar/issues"
   },
-  "homepage": "https://github.com/tjwoon/csZBar#readme"
+  "homepage": "https://github.com/Mr-House/csZBar#readme"
 }

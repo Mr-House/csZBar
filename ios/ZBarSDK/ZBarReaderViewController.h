@@ -56,7 +56,7 @@
     BOOL showsZBarControls, tracksSymbols, enableCache;
 
     ZBarHelpController *helpController;
-    UIView *controls, *shutter;
+    UIView *controls;
     BOOL didHideStatusBar, rotating;
     ZBarCameraSimulator *cameraSim;
 }
@@ -98,12 +98,6 @@
 
 // capture the next frame and send it over the usual delegate path.
 - (void) takePicture;
-
-//if can flash
-- (BOOL)canFlash;
-
-//if open light
-- (void)toggleLightIsOn:(BOOL)isOn;
 
 // these attempt to emulate UIImagePickerController
 + (BOOL) isCameraDeviceAvailable: (UIImagePickerControllerCameraDevice) cameraDevice;

@@ -1,9 +1,3 @@
-**This repository is unmaintained. Thank you to all collaborators who have helped to maintain it so far.**
-
-~~**This repository is looking for a maintainer! If you believe you are the right person, please [leave a comment](https://github.com/tjwoon/csZBar/issues/60)!**~~
-
-
-
 # ZBar Barcode Scanner Plugin
 
 This plugin integrates with the [ZBar](http://zbar.sourceforge.net/) library,
@@ -12,13 +6,13 @@ In this fork a button has been added to turn off and on device flash. In additio
 
 ## Installation
 
-    cordova plugin add cordova-plugin-cszbar
+    cordova plugin add @hi-itech/cordova-plugin-cszbar
 
 ## API
 
 ### Scan barcode
 
-    cloudSky.zBar.scan(params, onSuccess, onFailure)
+    zBar.scan(params, onSuccess, onFailure)
 
 Arguments:
 
@@ -26,7 +20,7 @@ Arguments:
 
     ```javascript
     {
-        text_title: "OPTIONAL Title Text - default = 'Scan QR Code'", // Android only
+        text_title: "OPTIONAL Title Text - default = 'Scan QR Code'",
         text_instructions: "OPTIONAL Instruction Text - default = 'Please point your camera at the QR code.'", // Android only
         camera: "front" || "back" // defaults to "back"
         flash: "on" || "off" || "auto" // defaults to "auto". See Quirks

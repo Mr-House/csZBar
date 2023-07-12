@@ -1,4 +1,4 @@
-package org.cloudsky.cordovaPlugins;
+package org.apache.cordova.zbar;
 
 import net.sourceforge.zbar.Symbol;
 
@@ -62,8 +62,8 @@ public class ZBarcodeFormat {
     }
 
     public static ZBarcodeFormat getFormatById(int id) {
-        for(ZBarcodeFormat format : ALL_FORMATS) {
-            if(format.getId() == id) {
+        for (ZBarcodeFormat format : ALL_FORMATS) {
+            if (format.getId() == id) {
                 return format;
             }
         }
