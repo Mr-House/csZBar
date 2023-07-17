@@ -1,6 +1,6 @@
 {
   "name": "@hi-itech/cordova-plugin-cszbar",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Plugin to integrate with the ZBar barcode scanning library.",
   "cordova": {
     "id": "@hi-itech/cordova-plugin-cszbar",

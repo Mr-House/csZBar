@@ -5,7 +5,7 @@
 //  Created by eCompliance on 23/01/15.
 
 #import "AlmaZBarReaderViewController.h"
-#import "CsZbar.h"
+#import "CsZBar.h"
 
 @interface AlmaZBarReaderViewController ()
 

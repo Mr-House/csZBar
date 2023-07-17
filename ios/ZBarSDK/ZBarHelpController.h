@@ -22,6 +22,7 @@
 //------------------------------------------------------------------------
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
 @class ZBarHelpController;
 
@@ -35,13 +36,11 @@
 
 // failure dialog w/a few useful tips
 
-@interface ZBarHelpController : UIViewController
-                              < UIWebViewDelegate,
-                                UIAlertViewDelegate >
+@interface ZBarHelpController : UIViewController<UIAlertViewDelegate >
 {
     NSString *reason;
     id delegate;
-    UIWebView *webView;
+    WKWebView *webView;
     UIToolbar *toolbar;
     UIBarButtonItem *doneBtn, *backBtn, *space;
     NSURL *linkURL;

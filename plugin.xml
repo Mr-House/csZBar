@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="@hi-itech/cordova-plugin-cszbar" version="1.0.6">
+        id="@hi-itech/cordova-plugin-cszbar" version="1.0.7">
 
     <engines>
         <engine name="cordova" version=">=3.0.0" />
@@ -72,6 +72,7 @@
             </feature>
         </config-file>
 
+
         <framework src="AVFoundation.framework" />
         <framework src="CoreMedia.framework" />
         <framework src="CoreVideo.framework" />
@@ -102,7 +103,14 @@
         <header-file src="ios/ZBarSDK/zbar/Symbol.h" />
         <header-file src="ios/ZBarSDK/zbar/Video.h" />
         <header-file src="ios/ZBarSDK/zbar/Window.h" />
-        <resource-file src="ios/Resources/CsZBarScanView.xib" />
+        <header-file src="ios/ZBarSDK/zbar/QZBar.h" />
+        <header-file src="ios/ZBarSDK/zbar/QZBarImage.h" />
+        <header-file src="ios/ZBarSDK/zbar/zbargtk.h" />
+        <resource-file src="ios/Resources/zbar-back.png" />
+        <resource-file src="ios/Resources/zbar-help.html" />
+        <resource-file src="ios/Resources/zbar-helpicons.png" />
+        <resource-file src="ios/Resources/zbar-line@2x.png" />
+        <resource-file src="ios/Resources/zbar-samples.png" />
     </platform>
 
 </plugin>
